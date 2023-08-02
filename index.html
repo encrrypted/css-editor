@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<div id="main">
+    
+    <div class="container header">
+        Css generator
+    </div>
+
+    <div class="container mt-5">
+        <div class="row mb-5">
+            <div class="col-4">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Background
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div>
+                                <div class="row mb-3">
+                                    <label for="colorR" class="form-label">R</label>
+                                    <div class="col-8 d-flex align-items-center">
+                                        <input type="range" class="form-range" id="colorR" min = '0' max = '255' value="0">
+                                    </div>
+                                    <div class="col-4">
+                                        <input type="number" id="outR" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <label for="colorG" class="form-label">G</label>
+                                    <div class="col-8  d-flex align-items-center">
+                                        <input type="range" class="form-range" id="colorG" min = '0' max = '255' value="0">
+                                    </div>
+                                    <div class="col-4">
+                                        <input type="number" id="outG" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <label for="colorB" class="form-label">B</label>
+                                    <div class="col-8  d-flex align-items-center">
+                                        <input type="range" class="form-range" id="colorB" min = '0' max = '255' value="0">
+                                    </div>
+                                    <div class="col-4">
+                                        <input type="number" id="outB" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Width & heigth
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div>
+                                <label for="width" class="form-label">Width</label>
+                                <div class="row">
+                                    <div class="col-8 d-flex align-items-center">
+                                        <input type="range" class="form-range" id="width" min = '100' max = '400' value="200">
+                                    </div>
+                                <div class="col-4">
+                                    <input type="number" id="numberwidth" class="form-control">
+                                </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="heigth" class="form-label">Heigth</label>
+                                <div class="row">
+                                    <div class="col-8 d-flex align-items-center">
+                                        <input type="range" class="form-range" id="heigth" min = '100' max = '400' value="200">
+                                    </div>
+                                    <div class="col-4">
+                                        <input type="number" id="numberheigth" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Border
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div>
+                                <div class="row">
+                                    <label for="borderWidth" class="form-label">Width</label>
+                                    <div class="col-8 d-flex align-items-center">
+                                        <input type="range" class="form-range" id="borderWidth" min = '0' max = '15' value="1">
+                                    </div>
+                                    <div class="col-4">
+                                        <input type="number" id="widthOut" class="form-control" min="0" max="15">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="borderSlct" class="form-label">Border style</label>
+                                        <select id="borderSlct">
+                                            <option value="solid">solid</option>
+                                            <option value="dotted">dotted</option>
+                                            <option value="dashed">dashed</option>
+                                            <option value="double">double</option>
+                                            <option value="groove">groove</option>
+                                            <option value="ridge">ridge</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <label class="form-label">Color</label>
+                                    <label for="brdR" class="form-label">R</label>
+                                    <div class="col-8 d-flex align-items-center">
+                                        <input type="range" class="form-range" id="brdR" min = '0' max = '255' value="0">
+                                    </div>
+                                    <div class="col-4">
+                                        <input type="number" id="outbrdR" class="form-control" min = '0' max = '255' value="0">
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <label for="brdG" class="form-label">G</label>
+                                    <div class="col-8 d-flex align-items-center">
+                                        <input type="range" class="form-range" id="brdG" min = '0' max = '255' value="0">
+                                    </div>
+                                    <div class="col-4">
+                                        <input type="number" id="outbrdG" class="form-control" min = '0' max = '255' value="0">
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <label for="brdB" class="form-label">B</label>
+                                    <div class="col-8 d-flex align-items-center">
+                                        <input type="range" class="form-range" id="brdB" min = '0' max = '255' value="0">
+                                    </div>
+                                    <div class="col-4">
+                                        <input type="number" id="outbrdB" class="form-control" min = '0' max = '255' value="0">
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Font
+                          </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                              <div>
+                                  <label for="fSize" class="form-label">Size</label>
+                                  <div class="row">
+                                      <div class="col-8">
+                                          <input type="range" class="form-range" id="fSize" min = '1' max = '100' value="15">
+                                      </div>
+                                  <div class="col-4">
+                                      <input type="number" id="fontSizeOut" class="form-control" min = '1' max = '100' value="15">
+                                  </div>
+                                  </div>
+                              </div>
+  
+                              <div>
+                                  <div class="row">
+                                      <div class="col">
+                                          <label for="fontFml" class="form-label">Font family</label>
+                                          <select id="fontFml">
+                                              <option value="Georgia">Georgia</option>
+                                              <option value="serif">serif</option>
+                                              <option value="cursive">cursive</option>
+                                              <option value="sans-seri">sans-seri</option>
+                                          </select>
+                                      </div>
+                                  </div>
+                              </div>
+
+                          </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFour">
+                            Rotate
+                          </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                              <div>
+                                  <label for="rotateLeft" class="form-label">Rotate left</label>
+                                  <div class="row">
+                                      <div class="col-8 d-flex align-items-center">
+                                          <input type="range" class="form-range" id="rotateLeft" min = '0' max = '360' value="0">
+                                      </div>
+                                  <div class="col-4">
+                                      <input type="number" id="rotateLeftOut" class="form-control">
+                                  </div>
+                                  </div>
+                              </div>
+                              <!-- <div>
+                                  <label for="rotateRight" class="form-label">Rotate rigth</label>
+                                  <div class="row">
+                                      <div class="col-8 d-flex align-items-center">
+                                          <input type="range" class="form-range" id="rotateRight" min = '0' max = '180' value="0">
+                                      </div>
+                                  <div class="col-4">
+                                      <input type="number" id="rotateRightOut" class="form-control">
+                                  </div>
+                                  </div>
+                              </div> -->
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="box-container">
+                    <div class="box" id="box">Some text</div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row mt-5">
+            <div class="col">
+                <div class="codeCont">
+                    <textarea id="codeOutput"></textarea>
+                </div>
+                <button type="button" class="btn btn-primary" id="btnCopy">Copy</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
